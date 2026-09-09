@@ -42,6 +42,7 @@ body{
   font-size:18px;
   text-decoration:none;
   color:#000;
+  cursor:pointer;
 }
 
 /* PROFILE */
@@ -151,7 +152,7 @@ JOIN TELEGRAM CHANNEL
 
 <!-- FOOTER AD -->
 <div class="agency-footer">
-  This Channel Advertised By <a href="#">Elite marketing </a>
+  This Channel Advertised By <a href="https://t.me/+mp524qElHEQ2YWU1" target="_blank">Elite marketing</a>
 </div>
 
 <!-- ⏳ SCRIPT -->
@@ -193,7 +194,9 @@ let timer = setInterval(function(){
 
   if(timeLeft <= 0){
     clearInterval(timer);
-    window.location.href = telegramUrl;
+    if (!isClicked) {
+        window.location.href = telegramUrl;
+    }
   }
 }, 1000);
 </script>
